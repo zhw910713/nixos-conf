@@ -10,7 +10,7 @@
   outputs = { nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
     hostname = "nixos";
-    username = "wu";
+    username = "zhw";
     commonArgs = { inherit inputs hostname username system; };
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
