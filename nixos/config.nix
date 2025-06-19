@@ -97,13 +97,14 @@
     LC_TIME = "zh_CN.UTF-8";
   };
 
-  zramSwap = {
-    enable = true;
-    priority = 100;
-    memoryPercent = 30;
-    swapDevices = 1;
-    algorithm = "zstd";
-  };
+  #### swap设置 没有swap分区或者swapfile文件不要启用 
+  #zramSwap = {
+  #  enable = true;
+  #  priority = 100;
+  #  memoryPercent = 30;
+  #  swapDevices = 1;
+  #  algorithm = "zstd";
+  #};
 
   users.users."${username}" = {
     isNormalUser = true;
